@@ -5,7 +5,7 @@ public void issue(){
             data1.add(data1.get(i%39));
         }
         
-        //data.size() = 1000040
+        //data.size() = 100040
         
         disposable.add(Completable.fromRunnable(()->{
                 Log.v("Room:Insertion", "Started");
