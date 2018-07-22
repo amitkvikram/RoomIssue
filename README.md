@@ -1,6 +1,6 @@
 # RoomIssue
 **Phase1**: There are three function issue() which is called by user. issue initializes data of type List<> with size 100040. Then data is inserted in database from a background thread and after Completion of insertion, ReadAfterWrite() is called which reads the data from database. Function ReadWithWrite is just called after isertion thread is started. ReadWithWrite() also tries to read data from database using a background thread. **In phase1 we do not wrap ReadWithWrite() read query(method loadAllData1) inside a transaction**.
-  - Code1: [ReadWithoutWrappingInTransaction](https://github.com/amitkvikram/RoomIssue/blob/master/readWithoutAddingTransaction).
+  - Code1: [ReadWithoutWrappingInTransaction](https://github.com/amitkvikram/RoomIssue/blob/master/ReadWithWrappingInTransaction).
   - Output: 
   
             07-22 23:23:49.126 V/Room:Insertion: Started
